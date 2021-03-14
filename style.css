@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+/* global */
+
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: var(--primary-red);
+  background-image: url(./images/bg-intro-mobile.png);
+  padding: 1.5rem;
+}
+
+/* top box */
+
+.info-box {
+  margin: 4rem 1rem;
+}
+.info-box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.info-box p {
+  color: papayawhip;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.trial-box {
+  background-color: var(--accent-blue);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 1rem 4rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.trial-box span {
+  color: var(--neutral-grayish-blue);
+}
+
+/* bottom box */
+
+form {
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 10px;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+}
+
+form .submit-btn {
+  background-color: var(--primary-green);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 3px rgb(43, 163, 111);
+}
+
+.submit-btn:hover {
+  background-color: hsla(154, 59%, 51%, 0.65);
+}
+
+form p {
+  color: var(--neutral-grayish-blue);
+  width: 80%;
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  align-self: center;
+}
+
+form a {
+  color: var(--primary-red);
+}
+
+input {
+  color: var(--neutral-dark-blue);
+  font-weight: 700;
+  font-size: 12px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
