@@ -20,11 +20,28 @@
             <div class="trial-box">
                 Try it free 7 days <span>then $20/mo. thereafter</span>
             </div>
-            <form>
-                <input type="text" name="fname" placeholder="First Name">
-                <input type="text" name="lname" placeholder="Last Name">
-                <input type="email" name="email" placeholder="Email Address">
-                <input type="password" name="password" placeholder="Password">
+            <form novalidate>
+                <label>
+                    <div class="error-icon"></div>
+                    <input type="text" name="fname" placeholder="First Name">
+                    <p class="error-msg"></p>
+                </label>
+                <label>
+                    <div class="error-icon"></div>
+                    <input type="text" name="lname" placeholder="Last Name">
+                    <p class="error-msg"></p>
+                </label>
+                <label>
+                    <div class="error-icon"></div>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <p class="error-msg"></p>
+                </label>
+                <label>
+                    <div class="error-icon"></div>
+                    <input type="password" name="password" placeholder="Password">
+                    <p class="error-msg"></p>
+                </label>
+                
                 <input class="submit-btn" type="submit" value="Claim your free trial">
                 <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
             </form>

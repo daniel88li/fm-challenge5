@@ -103,7 +103,6 @@ input {
   font-weight: 600;
   font-size: 16px;
   padding: 1rem;
-  margin: 0.5rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
@@ -111,6 +110,47 @@ input {
 input::placeholder {
   color: var(--neutral-dark-blue);
   font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+input:invalid {
+  color: var(--primary-red);
+  border-color: var(--primary-red);
+}
+
+input:active:invalid {
+  outline: none;
+}
+
+label {
+  position: relative;
+  margin: 0.5rem;
+}
+
+.error-icon {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: url(./images/icon-error.svg) no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+label input {
+  width: 100%;
+}
+
+.error-msg {
+  color: var(--primary-red);
+  font-size: 14px;
+  font-style: italic;
+  text-align: end;
+  width: auto;
+  font-weight: 400;
 }
 
 /* footer */
@@ -158,6 +198,10 @@ input::placeholder {
 
   .responsive-box {
     flex: 1;
+  }
+
+  .submit-btn:active {
+    outline: none;
   }
 
   .attribution {
